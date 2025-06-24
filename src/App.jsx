@@ -1,13 +1,14 @@
 import './App.css'
+import NavBar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
-function App() {
-  
-
+const App = () => {
   return (
-    <div>
-      <h1>unidad 1</h1>
-    </div>
-  )
-}
+    <>
+      <NavBar />
+      <ItemListContainer mensaje="¡Bienvenido a EMPILCHADOS! Descubrí nuestras ofertas 🛒" />
+    </>
+  );
+};
 
-export default App
+export default App;
