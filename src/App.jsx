@@ -1,14 +1,26 @@
-import './App.css'
-import NavBar from './components/Navbar';
-import ItemListContainer from './components/ItemListContainer';
+import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const App = () => {
+function App() {
+
   return (
-    <>
-      <NavBar />
-      <ItemListContainer mensaje="¡Bienvenido a EMPILCHADOS! Descubrí nuestras ofertas 🛒" />
-    </>
-  );
-};
+    <BrowserRouter>
+      <div className="app-container">
+        <NavBar />
 
-export default App;
+        <Routes>
+          <Route path="/" element={ <ItemListContainer /> } />
+          <Route path="/category/:category" element={ <ItemListContainer /> } />
+          <Route path="/detail/:productId" element={ <ItemDetailContainer /> } />
+          <Route path="*" element={<div>Error 404</div>} />
+        </Routes>
+
+      </div>
+    </BrowserRouter>
+  )
+}
+
+export default App

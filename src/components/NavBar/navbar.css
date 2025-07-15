@@ -1,0 +1,31 @@
+.navbar{
+  background-color: rgb(161, 155, 155);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  padding: 10px 30px;
+  margin: 0 0 50px 0;
+  font-size: 20px;
+}
+.navbar .logo{
+  width: 180px;
+}
+.categories{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 400;
+}
+.categories .category{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 5px;
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+}
+.categories .category:hover{
+  cursor: pointer;
+  border-bottom: 5px solid rgb(196, 73, 69);
+}
