@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Remera Jordan Jumpman",
-    description: "La remera Jordan Jumpman es una prenda deportiva de estilo urbano, reconocida por su diseño cómodo y versátil. Suele estar confeccionada en algodón suave y presenta el icónico logo **Jumpman**, símbolo representativo de la marca Jordan, inspirado en Michael Jordan. Es ideal tanto para el uso diario como para complementar outfits deportivos con un toque clásico y moderno.",
+    description: "La remera Jordan Jumpman es una prenda deportiva de estilo urbano, reconocida por su diseño cómodo y versátil. Suele estar confeccionada en algodón suave y presenta el icónico logo Jumpman, símbolo representativo de la marca Jordan, inspirado en Michael Jordan. Es ideal tanto para el uso diario como para complementar outfits deportivos con un toque clásico y moderno.",
     price: 80,
     stock: 5,
     image: "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw2e7cfaa6/products/NI_CJ0921-687/NI_CJ0921-687-1.JPG",

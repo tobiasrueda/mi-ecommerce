@@ -26,6 +26,9 @@
   background-color: rgb(207, 204, 204);
   padding: 20px 15px;
 }
+.text-item a{
+  text-decoration: none;
+}
 .title-item{
   margin: 0 0 40px 0;
 }

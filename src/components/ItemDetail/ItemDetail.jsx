@@ -1,13 +1,29 @@
-import React from 'react'
+import './itemdetail.css';
+import ItemCount from '../ItemCount/ItemCount';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({ product = {} }) => {
-  return (
-    <div>
-      <img src={product.image} alt="" />
+  const { addProductInCart } = useContext(CartContext);
 
-      <p>{product.name}</p>
-      <p>{product.description}</p>
-      <p>${product.price}</p>
+  const addProduct = (quantity) => {
+    const productCart = { ...product, quantity };
+    //añadir ese producto al carrito
+    addProductInCart(productCart);
+  }
+
+  return (
+    <div className='item-detail'>
+      <div className='item-detail-image-content'>
+        <img src={product.image} className='item-detail-image' alt="" />
+      </div>
+
+      <div className='item-detail-text-content'>
+        <p className='item-detail-text'>{product.name}</p>
+        <p className='item-detail-text-description'>{product.description}</p>
+        <p className='item-detail-text'>${product.price}</p>
+        <ItemCount stock={product.stock} addProduct={addProduct} />
+      </div>
     </div>
   )
 }
