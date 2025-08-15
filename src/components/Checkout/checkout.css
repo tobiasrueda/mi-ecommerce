@@ -24,9 +24,9 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(27, 27, 27);
-  border: 1px solid rgb(88, 110, 13);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-  color: rgb(183, 194, 24);
+  color: rgb(237, 238, 227);
   font-size: 20px;
 }
 .button-to-home{

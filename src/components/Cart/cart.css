@@ -25,7 +25,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: rgb(45, 6, 6);
+  background-color: rgb(240, 4, 4);
   border: 1px solid rgb(235, 144, 144);
   border-radius: 5px;
   color: rgb(203, 124, 124);
@@ -51,10 +51,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(61, 70, 6);
-  border: 1px solid rgb(255, 247, 4);
+  background-color: rgb(57, 209, 11);
+  border: 1px solid rgb(10, 10, 10);
   border-radius: 5px;
-  color: rgb(223, 243, 3);
+  color: rgb(8, 8, 8);
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -64,22 +64,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(45, 6, 6);
-  border: 1px solid rgb(235, 144, 144);
+  background-color: rgb(199, 11, 11);
+  border: 1px solid rgb(19, 18, 18);
   border-radius: 5px;
-  color: rgb(203, 124, 124);
+  color: rgb(3, 3, 3);
   font-size: 20px;
 }
 .button-delete-cart:hover{
   cursor: pointer;
   background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(190, 69, 69);
-  color: rgb(203, 124, 124);
+  border: 1px solid rgb(219, 11, 11);
+  color: rgb(241, 4, 4);
 }
 .button-continue-cart:hover{
   cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(175, 170, 21);
+  background-color: rgba(245, 243, 243, 0.062);
+  border: 1px solid rgb(39, 175, 21);
 }
 
 /*Empty cart styles*/
@@ -114,6 +114,6 @@
   background-color: rgb(9, 45, 6);
   border: 1px solid rgb(159, 235, 144);
   border-radius: 5px;
-  color: rgb(124, 203, 127);
+  color: rgb(95, 143, 96);
   font-size: 20px;
 }

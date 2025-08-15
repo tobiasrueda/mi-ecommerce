@@ -18,7 +18,7 @@
   color: white;
 }
 .controls-count button:hover{
-  border: 1px solid #b7d10f;
+  border: 1px solid #181817;
   cursor: pointer;
 }
 .controls-count p{
@@ -33,7 +33,7 @@
   color: white;
 }
 .button-add-count:hover{
-  border: 1px solid #b7d10f;
-  color: #b7d10f;
+  border: 1px solid #095319;
+  color: #0c6409;
   cursor: pointer;
 }
