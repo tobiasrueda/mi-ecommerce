@@ -28,12 +28,12 @@ const CartProvider = ({ children }) => {
     setCart(productsFilter);
   }
 
-  //deleteAllProducts - Borrar todos los productos
-
-  console.log(cart)
+  const deleteCart = () => {
+    setCart([])
+  }
 
   return(
-    <CartContext.Provider value={ { cart, addProductInCart, totalQuantity, totalPrice, deleteProductById } }>
+    <CartContext.Provider value={ { cart, addProductInCart, totalQuantity, totalPrice, deleteProductById, deleteCart } }>
       {children}
     </CartContext.Provider>
   )

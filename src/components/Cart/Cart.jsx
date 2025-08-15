@@ -1,26 +1,35 @@
-import { useContext } from "react"
-import { CartContext } from "../../context/CartContext"
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import "./cart.css";
+import { BsFillTrash3Fill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { cart, totalPrice, deleteProductById } = useContext(CartContext);
+  const { cart, totalPrice, deleteProductById, deleteCart } = useContext(CartContext);
 
   return (
-    <div>
-      <h2>Carrito de compras</h2>
+     <div className="cart" >
+      <h1 className="title-cart">Productos en el carrito</h1>
       {
-        cart.map((productCart)=> (
-          <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-            <img src={productCart.image} alt="" width={200} />
-            <p>{productCart.name}</p>
-            <p>c/u: ${productCart.price}</p>
-            <p>cantidad: {productCart.quantity}</p>
-            <p>precio parcial: ${productCart.price * productCart.quantity}</p>
-            <button onClick={ () => deleteProductById(productCart.id) } >Eliminar</button>
+        cart.map( (productCart) => (
+          <div className="item-cart" key={productCart.id}>
+            <img className="img-item-cart" src={productCart.image} width={100} alt="" />
+            <p className="text-item-cart">{productCart.name}</p>
+            <p className="text-item-cart">precio c/u: ${productCart.price}</p>
+            <p className="text-item-cart">cantidad: {productCart.quantity}</p>
+            <p className="text-item-cart">precio parcial: ${ productCart.price * productCart.quantity } </p>
+            <button className="delete-item-cart" onClick={ () => deleteProductById(productCart.id) } >
+              <BsFillTrash3Fill />
+            </button>
           </div>
         ))
       }
 
-      <p>Precio total: ${totalPrice()}</p>
+      <div className="info-cart">
+        <p className="text-info-cart">Precio total: ${totalPrice()}</p>
+        <Link className="button-continue-cart" to="/checkout">Continuar con mi compra</Link>
+        <button className="button-delete-cart" onClick={deleteCart} >Vaciar carrito</button>
+      </div>
     </div>
   )
 }
